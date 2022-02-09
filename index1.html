@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <script src="index.js" ></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  </head>
+<body> 
+  <h1>Mobile project</h1>
+  <h2>simulate WCDMA downlink signal for four users from a specified Node B.</h2>
+  <h4> 
+      Change the text of the text field  
+      ,and then click the button. 
+  </h4> 
+  
+  <div id="formMain">
+    <form id="form_id_1" class="formClass">
+      <div id="ds1">
+        <p>The data sequence for user1</p>
+        <input type="text" class="inputClass" id="dsi1" name="name" value="1 1 -1 -1">
+       
+      </div>
+      <div id="dr1">
+        <p>The required data rate for user1 in Kb/s</p>
+        <input type="text" class="inputClass" id="dri1" name="address" value="480">
+      </div>
+    </form>
+  </div>
+  <div id="formMain">
+    <form id="form_id_2" class="formClass">
+      <div id="ds2">
+        <p>The data sequence for user2</p>
+        <input type="text" class="inputClass" id="dsi2" name="name" value="1 1 -1 -1">
+       
+      </div>
+      <div id="dr1">
+        <p>The required data rate for user2 in Kb/s</p>
+        <input type="text" class="inputClass" id="dri2" name="address" value="480">
+      </div>
+    </form>
+  </div>
+  <div id="formMain">
+    <form id="form_id_3" class="formClass">
+      <div id="ds1">
+        <p>The data sequence for user3</p>
+        <input type="text" class="inputClass" id="dsi3" name="name" value="1 1 -1 -1">
+       
+      </div>
+      <div id="dr1">
+        <p>The required data rate for user3 in Kb/s</p>
+        <input type="text" class="inputClass" id="dri3" name="address" value="480">
+      </div>
+    </form>
+
+
+  </div>
+  <div id="formMain">
+    <form id="form_id_4" class="formClass">
+      <div id="ds4">
+        <p>The data sequence for user4</p>
+        <input type="text" class="inputClass" id="dsi4" name="name" value="1 1 -1 -1">
+       
+      </div>
+      <div id="dr1">
+        <p>The required data rate for user4 in Kb/s</p>
+        <input type="text" class="inputClass" id="dri4" name="address" value="480">
+      </div>
+    </form>
+
+
+  </div>
+  <button type="button"  onclick="getValueInput()"> 
+    calculations !
+</button> 
+
+
+<h4>User 1 Data</h4>
+<p id="dso1">The data sequence for user1 : </p> 
+<p id="dro1">The data rate for user1 : </p> 
+<p id="SF1">The Spread Factor for user1 : </p> 
+<p id="OVSF1">The OVSF code for user1 : </p> 
+
+<h4>User 2 Data</h4>
+<p id="dso2">The data sequence for user2 :</p> 
+<p id="dro2">The data rate for user2 : </p> 
+<p id="SF2">The Spread Factor for user2 : </p> 
+<p id="OVSF2">The OVSF code for user2 : </p> 
+
+<h4>User 3 Data</h4>
+<p id="dso3">The data sequence for user3 : </p> 
+<p id="dro3">The data rate for user3 : </p> 
+<p id="SF3">The Spread Factor for user3 : </p> 
+<p id="OVSF3">The OVSF code for user3 : </p> 
+
+<h4>User 4 Data</h4>
+<p id="dso4">The data sequence for user4 : </p> 
+<p id="dro4">The data rate for user4 : </p> 
+<p id="SF4">The Spread Factor for user4 : </p> 
+<p id="OVSF4">The OVSF code for user4 : </p> 
+
+<button type="button"  onclick="out()"> 
+  Plot !
+</button> 
+
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+</body> 
+  
+</html> 
